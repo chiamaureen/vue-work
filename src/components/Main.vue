@@ -30,20 +30,25 @@
     </div>
 </template>
 <script>
-import ToolBar from "./ToolBar.vue";
+import ToolBar from './ToolBar.vue';
+import { get_product_list_ajax } from "../utils/product.js";
 export default {
-    components: {
-        ToolBar
-    },
+  components: {
+    ToolBar
+  },
 
-    data () {
-        return {
-            
-        }
-    },
+  mounted () {
+    get_product_list_ajax.call(this);
+  },
 
-    methods: {
+  data () {
+    return {
+        
     }
+  },
+
+  methods: {
+  }
 }
 
 </script>

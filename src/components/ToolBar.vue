@@ -1,22 +1,22 @@
 <template>
     <div class="toolbar">
-        
+
     </div>
 </template>
 <script>
 
 export default {
-    components: {
-    },
+  components: {
+  },
 
-    data () {
-        return {
-            
-        }
-    },
+  data () {
+    return {
 
-    methods: {
     }
+  },
+
+  methods: {
+  }
 }
 
 </script>
