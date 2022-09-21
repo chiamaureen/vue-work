@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
     .toolbar {
-        height: 100vh;
+        height: 500vh;
         width: 80px;
         background-color: #eee;
         position: absolute;
