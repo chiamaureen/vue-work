@@ -23,9 +23,9 @@ export default {
 
 <style scoped>
     .toolbar {
-        height: 500vh;
+        /* height: 400vh; */
         width: 80px;
-        background-color: #eee;
+        /* background-color: #eee; */
         position: absolute;
         top: 0
     }

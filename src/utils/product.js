@@ -7,6 +7,10 @@ export async function get_product_list_ajax() {
   try {
     const result = typeof response.data === "object" ? response.data : JSON.parse(response.data);
     if (result["success"]) {
+        let index = result.products.findIndex(x => x.category == '測試分類');
+        if (index !== -1) {
+          result.products.splice(index, 1);
+        }
         this.$store.commit('SET_PRODUCT_LIST', result.products);
     } else {
         // 
